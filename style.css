@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Berkshire Swash', cursive;
+    color: #e9e4d0;
+}
+body{
+    font-family: 'Berkshire Swash', cursive;
+    background: url('Image/3.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 550px;
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    border-radius: 5px;
+    
+}
+.wrapper .title h1{
+    color: #e9e4d0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.contact-form{
+    display: flex;
+   }
+.input-field{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-field, .masage{
+    width: 48%;
+    
+}
+.input, .text-area{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #e9e4d0;
+    padding: 10px;
+    color: e9e4d0;
+    width: 100%;
+   
+}
+.text-area{
+    height: 208px;
+}
+::placeholder {
+  /* Chrome/Opera/Safari */
+  color: #e9e4d0;
+    font-size: 15px;
+    font-family: 'Berkshire Swash', cursive;
+}
+:-ms-input-placeholder{/*Internet explorar 10-11*/
+    color: #e9e4d0;
+    font-size: 15px;
+    font-family: 'Berkshire Swash', cursive;
+}
+::-ms-input-placeholder{/*microsoft edge*/
+    color: #e9e4d0;
+    font-size: 15px;
+    font-family: 'Berkshire Swash', cursive;
+}
+::-moz-placeholder{/*firfox 19+*/
+    color: #e9e4d0;
+    font-size: 15px;
+    font-family: 'Berkshire Swash', cursive;
+}
+.buttton{
+    background: #ca8655;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    color: #e9e4d0;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .text-area{
+        height: 80px;
+    }
+    .input-field, .masage{
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
